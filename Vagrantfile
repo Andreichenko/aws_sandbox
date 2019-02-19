@@ -42,6 +42,12 @@ Vagrant.configure("2") do |config|
   systemctl start docker
   usermod -aG docker vagrant
 
+  curl --silent --location https://rpm.nodesource.com/setup_10.x | sudo bash -
+  yum install epel-release -y
+  yum install docker git wget awscli jq nodejs golang:1.8.3 -y
+  npm install appcelerator -g
+  appc use latest
+
   SHELL
 
     
