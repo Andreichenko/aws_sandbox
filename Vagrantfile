@@ -44,10 +44,11 @@ Vagrant.configure("2") do |config|
 
   curl --silent --location https://rpm.nodesource.com/setup_10.x | sudo bash -
   yum install epel-release -y
-  yum install docker git wget awscli jq nodejs golang:1.8.3 -y
-  npm install appcelerator -g
+  sudo yum install -y nodejs
+  sudo yum install git awscli golang:1.8.3 -y
+  sudo npm install appcelerator -g
   appc use latest
-
+  ln -s ".appcelerator/install/7.0.9/package/appc.json" ~/appc.json
   SHELL
 
     

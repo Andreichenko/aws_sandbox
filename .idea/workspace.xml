@@ -23,8 +23,8 @@
     <option name="FILTER_BY_CURRENT_PROJECT" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f56ea06-1211-4082-b0e4-11b164fde3d2" name="Default Changelist" comment="prepare instance and Docker installation">
-      <change beforePath="$PROJECT_DIR$/Vagrantfile" beforeDir="false" afterPath="$PROJECT_DIR$/Vagrantfile" afterDir="false" />
+    <list default="true" id="3f56ea06-1211-4082-b0e4-11b164fde3d2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,8 +37,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Vagrantfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="694">
-              <caret line="48" column="2" selection-start-line="48" selection-start-column="2" selection-end-line="48" selection-end-column="2" />
+            <state relative-caret-position="524">
+              <caret line="38" column="28" lean-forward="true" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -150,7 +150,28 @@
       <option name="project" value="LOCAL" />
       <updated>1550611410505</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="prepare instance and Docker installation">
+      <created>1550830275069</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1550830275069</updated>
+    </task>
+    <task id="LOCAL-00003" summary="fix">
+      <created>1550830311484</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1550830311484</updated>
+    </task>
+    <task id="LOCAL-00004" summary="fix the name instance">
+      <created>1550830515617</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1550830515617</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -197,13 +218,15 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="prepare instance and Docker installation" />
-    <option name="LAST_COMMIT_MESSAGE" value="prepare instance and Docker installation" />
+    <MESSAGE value="fix" />
+    <MESSAGE value="fix the name instance" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix the name instance" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Vagrantfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="694">
-          <caret line="48" column="2" selection-start-line="48" selection-start-column="2" selection-end-line="48" selection-end-column="2" />
+        <state relative-caret-position="524">
+          <caret line="38" column="28" lean-forward="true" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
         </state>
       </provider>
     </entry>
