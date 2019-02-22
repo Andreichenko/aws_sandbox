@@ -1,10 +1,10 @@
 Vagrant.configure("2") do |config|
     #Vagrant box deployment machine
-    #Centos 7.5 minimal by sbelakou
-    # 20 GB HDD, nothing extra
+    #Centos 7.5 official
+    #20 GB HDD, nothing extra
 
-   config.vm.box = "sbeliakou/centos"
-   config.vm.box_version = "7.5"
+   config.vm.box = "centos/7"
+   config.vm.box_version = "1901.01"
 
   # config private network for VM
   config.vm.network :private_network, ip: "192.168.50.10"
