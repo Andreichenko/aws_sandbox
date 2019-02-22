@@ -1,7 +1,7 @@
 Vagrant.configure("2") do |config|
     #Vagrant box deployment machine
-    #Centos 7.5 minimal by sbelakou
-    # 20 GB HDD, nothing extra
+    #Centos 7.5 official
+    #20 GB HDD, nothing extra
 
    config.vm.box = "centos/7"
    config.vm.box_version = "1901.01"
