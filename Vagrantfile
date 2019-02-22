@@ -19,7 +19,7 @@ Vagrant.configure("2") do |config|
   config.vm.provider "virtualbox" do |vb|
 
     #Virual box name
-    vb.name = "FoundationInstance"
+    vb.name = "FInstance"
 
     #Customiztion CPU and memory
     # 2048 memmory CPU execution 30
