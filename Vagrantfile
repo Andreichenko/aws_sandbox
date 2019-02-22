@@ -47,7 +47,7 @@ Vagrant.configure("2") do |config|
   sudo yum install -y nodejs
   sudo yum install git awscli golang:1.8.3 -y
   sudo npm install appcelerator -g
-  appc use latest
+  appc setup
   ln -s ".appcelerator/install/7.0.9/package/appc.json" ~/appc.json
   SHELL
 
