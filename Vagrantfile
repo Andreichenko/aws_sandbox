@@ -10,7 +10,7 @@ Vagrant.configure("2") do |config|
   config.vm.network :private_network, ip: "192.168.50.10"
 
   #Host name
-  config.vm.hostname = "foundation_instance"
+  config.vm.hostname = "FInstance"
 
   #SSH configure
   config.ssh.insert_key = false
