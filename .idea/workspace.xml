@@ -23,7 +23,14 @@
     <option name="FILTER_BY_CURRENT_PROJECT" value="true" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< Updated upstream
     <list default="true" id="3f56ea06-1211-4082-b0e4-11b164fde3d2" name="Default Changelist" comment="" />
+=======
+    <list default="true" id="3f56ea06-1211-4082-b0e4-11b164fde3d2" name="Default Changelist" comment="additional package for deployment">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/Vagrantfile" afterPath="$PROJECT_DIR$/Vagrantfile" />
+    </list>
+>>>>>>> Stashed changes
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,8 +42,14 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Vagrantfile">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
             <state relative-caret-position="323">
               <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+=======
+            <state relative-caret-position="366">
+              <caret line="53" column="3" lean-forward="false" selection-start-line="53" selection-start-column="3" selection-end-line="53" selection-end-column="3" />
+              <folding />
+>>>>>>> Stashed changes
             </state>
           </provider>
         </entry>
@@ -67,19 +80,23 @@
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="804" />
+    <option name="height" value="801" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+<<<<<<< Updated upstream
+=======
+      <pane id="AndroidView" />
+>>>>>>> Stashed changes
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="local_machine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="local_machine" type="462c0819:PsiDirectoryNode" />
+              <item name="deployment_machine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="deployment_machine" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -87,6 +104,10 @@
       </pane>
       <pane id="Scope" />
       <pane id="PackagesPane" />
+<<<<<<< Updated upstream
+=======
+      <pane id="Scratches" />
+>>>>>>> Stashed changes
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -144,7 +165,10 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1550585156557</updated>
-      <workItem from="1550608811655" duration="3815000" />
+      <workItem from="1550608811655" duration="4514000" />
+      <workItem from="1550695683218" duration="469000" />
+      <workItem from="1550696220683" duration="784000" />
+      <workItem from="1551022398589" duration="877000" />
     </task>
     <task id="LOCAL-00001" summary="prepare instance and Docker installation">
       <created>1550611410505</created>
@@ -153,6 +177,7 @@
       <option name="project" value="LOCAL" />
       <updated>1550611410505</updated>
     </task>
+<<<<<<< Updated upstream
     <task id="LOCAL-00002" summary="prepare instance and Docker installation">
       <created>1550830275069</created>
       <option name="number" value="00002" />
@@ -203,12 +228,23 @@
       <updated>1550840049161</updated>
     </task>
     <option name="localTasksCounter" value="9" />
+=======
+    <task id="LOCAL-00002" summary="additional package for deployment">
+      <created>1550614398931</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1550614398931</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+>>>>>>> Stashed changes
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3815000" />
+    <option name="totallyTimeSpent" value="6644000" />
   </component>
   <component name="ToolWindowManager">
+<<<<<<< Updated upstream
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
@@ -242,6 +278,40 @@
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info anchor="right" id="Maven Projects" order="8" />
       <window_info anchor="right" id="Database" order="9" />
+=======
+    <frame x="0" y="23" width="1440" height="801" extended-state="6" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5183016" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2639485" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Amazon EC2" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="TeamCity" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+>>>>>>> Stashed changes
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -249,18 +319,49 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="prepare instance and Docker installation" />
+<<<<<<< Updated upstream
     <MESSAGE value="fix the name instance" />
     <MESSAGE value="reviewed and added new packages for publishing applications" />
     <MESSAGE value="fix" />
     <MESSAGE value="code review" />
     <MESSAGE value="version_7.5_sb" />
     <option name="LAST_COMMIT_MESSAGE" value="version_7.5_sb" />
+=======
+    <MESSAGE value="additional package for deployment" />
+    <option name="LAST_COMMIT_MESSAGE" value="additional package for deployment" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+>>>>>>> Stashed changes
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Vagrantfile">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="323">
           <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+=======
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vagrantfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vagrantfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="53" column="3" lean-forward="false" selection-start-line="53" selection-start-column="3" selection-end-line="53" selection-end-column="3" />
+          <folding />
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>
