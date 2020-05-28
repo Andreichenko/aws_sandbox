@@ -1,0 +1,1 @@
+{"rsync":{"/vagrant":{"type":"rsync","guestpath":"/vagrant","hostpath":"/Users/aleksandrandreichenko/Documents/deploy/virtual_instance/for_apifoundation/deployment_machine","disabled":false,"__vagrantfile":true,"owner":"vagrant","group":"vagrant"}}}
