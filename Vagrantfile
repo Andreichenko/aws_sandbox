@@ -44,17 +44,17 @@ Vagrant.configure("2") do |config|
   usermod -aG docker vagrant
 
   # install epel release
-  curl --silent --location https://rpm.nodesource.com/setup_10.x | sudo bash -
-  yum install epel-release -y
+  #curl --silent --location https://rpm.nodesource.com/setup_10.x | sudo bash -
+  #yum install epel-release -y
   
   #install node js
-  sudo yum install -y nodejs
-  sudo yum install git awscli golang:1.8.3 -y
+ # sudo yum install -y nodejs
+ # sudo yum install git awscli golang:1.8.3 -y
   
   #install appcelerator and appc 
-  npm install appcelerator -g
-  appc setup
-  ln -s ".appcelerator/install/7.0.9/package/appc.json" ~/appc.json
+ # npm install appcelerator -g
+ # appc setup
+ # ln -s ".appcelerator/install/7.0.9/package/appc.json" ~/appc.json
   SHELL
 
     
