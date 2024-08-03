@@ -1,0 +1,50 @@
+---
+- name: Create IM Jira Issue
+  hosts: localhost
+  gather_facts: no
+  vars:
+    jira_api_token: "{{ jira_api_token }}"
+    alert_summary: "{{ alert_summary }}"
+    alert_description: "{{ alert_description }}"
+    dashboard_url: "{{ dashboard_url }}"
+    server_name: "{{ server_name }}"
+    acc_id: "id"
+  tasks:
+    - name: Create an IM Jira issue with required fields
+      uri:
+        url: "https://callproject.atlassian.net/rest/api/2/issue/"
+        method: POST
+        user: "test@eggpro.com"
+        password: "{{ jira_api_token }}"
+        body_format: json
+        headers:
+          Content-Type: "application/json"
+          Authorization: "Basic {{ ('test@eggpro.com' + ':' + jira_api_token) | b64encode }}"
+        body:
+          fields:
+            project:
+              key: "CAL"
+            summary: "{{ alert_summary }}"
+            description: "Alert Description: {{ alert_description }}. Dashboard URL: {{ dashboard_url }}. Server: {{ server_name }}"
+            issuetype:
+              name: "IM" #   IM
+            customfield_10036: "{{ lookup('pipe', 'date --iso-8601=seconds') }}"
+        status_code: 201
+      register: jira_response
+
+    - name: Assign issue to {{ acc_id }}
+      uri:
+        url: "https://testprj.atlassian.net/rest/api/2/issue/{{ jira_response.json.key }}/assignee"
+        method: PUT
+        user: "test"
+        password: "{{ jira_api_token }}"
+        body_format: json
+        headers:
+          Content-Type: "application/json"
+          Authorization: "Basic {{ ('test@eggpro.com' + ':' + jira_api_token) | b64encode }}"
+        body:
+          accountId: "{{ acc_id }}" # `accountId`
+        status_code: 204
+
+    - debug:
+        var: jira_response
