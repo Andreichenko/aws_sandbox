@@ -1,0 +1,22 @@
+---
+
+- name: 'Linux Patching'
+  hosts: '{{ target | default (None) }}'
+  become: true
+  tasks:
+
+    - name: 'Linux Patching | yum clean all'
+      command: 'yum clean all'
+      tags: 'skip_ansible_lint'
+
+    - name: 'Linux Patching | Yum Updates'
+      yum:
+        name: '*'
+        state: 'latest'
+        update_cache: true
+        exclude: 'zeromq.x86_64,salt*,*salt*,salt-*,python-zmq.x86_64,elasticsearch*,logstash*,grafana*,cassandra*,kibana*'
+      tags: 'skip_ansible_lint'
+
+    - name: 'Linux Patching | Reboot'
+      reboot:
+        pre_reboot_delay: 10
