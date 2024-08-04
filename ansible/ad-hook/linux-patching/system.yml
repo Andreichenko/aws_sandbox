@@ -1,0 +1,12 @@
+---
+
+- name: 'Start nginx service for callbot'
+  hosts: '{{ target | default (None) }}'
+  become: true
+  tasks:
+
+    - name: 'Check and start nginx'
+      systemd:
+        state: 'started'
+        name: 'nginx'
+      tags: 'skip_ansible_lint'
