@@ -48,10 +48,13 @@ jobs:
         terraform init -backend=false
 
     - name: AWS Instance - Terraform Validate
+      env:
+        TF_VAR_public_key_path: fake_key.pub
+        TF_VAR_public_key: fake
       run: |
         cd terraform/aws_instance
         touch fake_key.pub
-        terraform validate -var="public_key_path=fake_key.pub" -var="public_key=fake"
+        terraform validate
 
     # 6. Initialize and Validate Vultr Dev Module
     - name: Vultr Dev - Terraform Init
