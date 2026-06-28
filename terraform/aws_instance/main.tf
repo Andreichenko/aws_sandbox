@@ -41,11 +41,11 @@ resource "aws_instance" "docker" {
   }
 
   provisioner "local-exec" {
-    command = "until ssh -o StrictHostKeyChecking=no -i /var/lib/jenkins/.ssh/id_ed25519 ec2-user@${self.public_ip} 'echo connected'; do echo 'Waiting for SSH...'; sleep 10; done"
+    command = "until ssh -o StrictHostKeyChecking=no -i /var/lib/jenkins/.ssh/id_ed25519 ${var.ssh_user}@${self.public_ip} 'echo connected'; do echo 'Waiting for SSH...'; sleep 10; done"
     }
 
   provisioner "local-exec" {
-    command = "ansible-playbook -i '${self.public_ip},' ansible/setup_user.yml -e ssh_key='$(cat /var/lib/jenkins/.ssh/id_ed25519.pub)' -u ec2-user --private-key=/var/lib/jenkins/.ssh/id_ed25519 --ssh-extra-args='-o StrictHostKeyChecking=no'"
+    command = "ansible-playbook -i '${self.public_ip},' ansible/setup_user.yml -e ssh_key='$(cat /var/lib/jenkins/.ssh/id_ed25519.pub)' -e target_user='${var.ssh_user}' -u ${var.ssh_user} --private-key=/var/lib/jenkins/.ssh/id_ed25519 --ssh-extra-args='-o StrictHostKeyChecking=no'"
     }
 
 

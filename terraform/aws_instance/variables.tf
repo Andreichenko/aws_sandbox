@@ -18,3 +18,9 @@ variable "public_key" {
   type        = string
   sensitive   = true
 }
+
+variable "ssh_user" {
+  description = "The default SSH user for the AMI"
+  type        = string
+  default     = "ubuntu"
+}

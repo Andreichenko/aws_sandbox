@@ -6,6 +6,6 @@
   tasks:
     - name: Ensure authorized_keys contains the Jenkins SSH public key
       ansible.posix.authorized_key:
-        user: ec2-user
+        user: "{{ target_user }}"
         state: present
         key: "{{ ssh_key }}"
