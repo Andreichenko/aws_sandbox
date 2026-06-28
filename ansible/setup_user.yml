@@ -1,0 +1,11 @@
+---
+- name: Setup User on EC2 Instance
+  hosts: all
+  become: yes
+  gather_facts: no
+  tasks:
+    - name: Ensure authorized_keys contains the Jenkins SSH public key
+      ansible.posix.authorized_key:
+        user: ec2-user
+        state: present
+        key: "{{ ssh_key }}"
