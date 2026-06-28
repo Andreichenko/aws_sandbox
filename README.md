@@ -22,7 +22,7 @@ cd <this-repo>
 2. Create the required S3 bucket and DynamoDB table using CloudFormation:
 
 ```sh
-aws cloudformation create-stack --stack-name my-stack --template-body file://s3-dynamodb.yml --parameters ParameterKey=S3BucketName,ParameterValue=my-s3-bucket ParameterKey=DynamoDBName,ParameterValue=my-lock-table
+aws cloudformation create-stack --stack-name my-stack --template-body file://cloudformation/s3.yaml --parameters ParameterKey=S3BucketName,ParameterValue=my-s3-bucket ParameterKey=DynamoDBName,ParameterValue=my-lock-table
 ```
 
 3. Update `backend.tf` with the S3 bucket and DynamoDB table names you provided as parameters when creating the CloudFormation stack:
