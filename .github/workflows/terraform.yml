@@ -1,0 +1,65 @@
+name: 'Terraform CI/CD Pipeline'
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: 'Lint & Validate'
+    runs-on: ubuntu-latest
+
+    steps:
+    # 1. Checkout the repository code
+    - name: Checkout Code
+      uses: actions/checkout@v3
+
+    # 2. Set up Terraform CLI
+    - name: Setup Terraform
+      uses: hashicorp/setup-terraform@v2
+      with:
+        terraform_version: 1.9.0
+
+    # 3. Check code formatting (non-blocking)
+    - name: Terraform Format Check
+      run: terraform fmt -check -recursive
+      continue-on-error: true
+
+    # 4. Initialize and Validate EKS Staging Module
+    - name: EKS Staging - Terraform Init
+      run: |
+        cd terraform/staging
+        terraform init -backend=false
+
+    - name: EKS Staging - Terraform Validate
+      run: |
+        cd terraform/staging
+        terraform validate
+
+    # 5. Initialize and Validate AWS Instance Module
+    - name: AWS Instance - Terraform Init
+      run: |
+        cd terraform/aws_instance
+        terraform init -backend=false
+
+    - name: AWS Instance - Terraform Validate
+      run: |
+        cd terraform/aws_instance
+        touch fake_key.pub
+        terraform validate -var="public_key_path=fake_key.pub" -var="public_key=fake"
+
+    # 6. Initialize and Validate Vultr Dev Module
+    - name: Vultr Dev - Terraform Init
+      run: |
+        cd terraform/vultr-dev
+        terraform init -backend=false
+
+    - name: Vultr Dev - Terraform Validate
+      run: |
+        cd terraform/vultr-dev
+        terraform validate
