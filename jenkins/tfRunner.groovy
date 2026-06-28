@@ -89,7 +89,7 @@ pipeline {
                 withCredentials([aws(credentialsId: 'aws-credentials', accessKeyVariable: 'AWS_ACCESS_KEY_ID', secretKeyVariable: 'AWS_SECRET_ACCESS_KEY')]) {
                     sh '''
                     cd ./terraform/staging/
-                    terraform plan -lock=false -out=tfplan'''
+                    terraform plan -lock=false -var="cluster_name=${CLUSTER_NAME}" -out=tfplan'''
                 }
             }
         }
@@ -109,7 +109,7 @@ pipeline {
         stage('Save Kubeconfig') {
               steps {
                 script {
-                  eksConfig.save('us-east-1', env.CLUSTER_NAME)
+                  eksConfig.save(env.AWS_DEFAULT_REGION, env.CLUSTER_NAME)
                 }
             }
         }
