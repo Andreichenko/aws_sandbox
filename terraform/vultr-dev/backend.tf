@@ -8,7 +8,7 @@ terraform {
     skip_credentials_validation = true
     skip_metadata_api_check = true
     force_path_style        = true
-    access_key             = var.digitalocean_accesskey
-    secret_key             = var.digitalocean_token
+    access_key             = "$DO_ACCESS_KEY"
+    secret_key             = "$DO_SECRET_KEY"
   }
 }

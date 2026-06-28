@@ -7,7 +7,7 @@ terraform {
 }
 
 provider "vultr" {
-  api_key = var.VULTR_API_TOKEN
+  api_key = "$VULTR_API_KEY"
 }
 
 resource "vultr_instance" "testcall" {
