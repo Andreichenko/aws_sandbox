@@ -6,7 +6,7 @@ This repository contains Terraform code to deploy a Kubernetes-based Test applic
 
 ## Prerequisites
 
-1. [Terraform](https://www.terraform.io/downloads.html) installed (version >= 0.13)
+1. [Terraform](https://www.terraform.io/downloads.html) installed (version >= 1.0, recommended 1.9.0)
 2. [AWS CLI](https://aws.amazon.com/cli/) installed and configured with appropriate credentials
 3. [kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/) installed (optional, to interact with the deployed Kubernetes cluster)
 
@@ -62,6 +62,18 @@ aws eks update-kubeconfig --region us-west-2 --name my-cluster-name
 ```sh
 terraform destroy
 ```
+
+## Providers
+
+This project is configured to use the following provider constraints for stability:
+* **AWS Provider**: `~> 4.0` (Pinned to avoid compatibility issues with EKS/VPC modules and AWS v5.x)
+* **Vultr Provider**: Default latest
+* **Template Provider**: `>= 2.1.2`
+
+## CI/CD Pipeline
+
+This repository has a built-in CI/CD pipeline managed via **GitHub Actions** ([.github/workflows/terraform.yml](file://.github/workflows/terraform.yml)):
+* **Lint & Validate (CI)**: On every push and Pull Request, the pipeline runs code format check (`terraform fmt`) and code validation (`terraform validate`) using Terraform **1.9.0** for all sub-modules (staging, aws_instance, vultr-dev).
 
 ## Contributing
 
